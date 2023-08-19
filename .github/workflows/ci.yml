@@ -18,5 +18,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Go version
-        run: go version
+      - name: Run go tests
+        run: go test ./...
+
+      - name: Go formatting check
+        run: go fmt ./...
