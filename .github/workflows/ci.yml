@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Run go tests
-        run: go test ./...
+        run: go test ./... -cover
 
       - name: Go formatting check
         run: go fmt ./...
